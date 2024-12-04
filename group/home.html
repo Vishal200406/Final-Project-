@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atari Games</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Atari Games</h1>
+            <p class="slogan">Relive the Golden Age of Gaming with Atari</p>
+        </div>
+    </header>
+
+    <!-- Promo Video Section -->
+    <section class="promo-video">
+        <video autoplay muted loop playsinline>
+            <source src="promo video .mp4" type="video/mp4"> <!-- Correct file path -->
+            <source src="promo-video.webm" type="video/webm"> <!-- Correct file path -->
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+        <div class="intro-content">
+            <h2>Welcome to the World of Atari</h2>
+            <p>
+                Founded in 1972 by Nolan Bushnell and Ted Dabney, Atari is widely regarded as the pioneer of the video game industry. It forever changed the entertainment landscape with the release of <em>Pong</em>, one of the first arcade games to gain mainstream popularity.
+            </p>
+            <p>
+                Atari not only introduced classic games like <em>Asteroids</em>, <em>Centipede</em>, and <em>Missile Command</em>, but also inspired the modern gaming industry by establishing standards in hardware and software development. Its contributions to gaming history are unparalleled.
+            </p>
+        </div>
+    </section>
+
+    <!-- Featured Games Section -->
+    <section class="featured-games">
+        <h2>Featured Games</h2>
+        <div class="games">
+            <div class="game">
+                <img src="images/Pac-Man.jpg" alt="Pac-Man" class="game-image"> <!-- Correct file path -->
+                <h3>Pac-Man</h3>
+                <p>Navigate through mazes and avoid ghosts in this iconic arcade game. Pac-Man became one of the most popular games of all time, known for its simple yet addictive gameplay.</p>
+            </div>
+            <div class="game">
+                <img src="images/Space invaders.webp" alt="Space Invaders" class="game-image"> <!-- Correct file path -->
+                <h3>Space Invaders</h3>
+                <p>Defend Earth from waves of invading aliens. Space Invaders defined the space shooter genre and is one of the first to use a scrolling screen for gameplay.</p>
+            </div>
+            <div class="game">
+                <img src="images/Asteriods game.jpg" alt="Asteroids" class="game-image"> <!-- Correct file path -->
+                <h3>Asteroids</h3>
+                <p>Destroy asteroids while avoiding collisions in this classic arcade game. Known for its vector graphics, it pushed the boundaries of what was possible in early video games.</p>
+            </div>
+        </div>
+        <button class="view-more-btn">View More Products</button>
+    </section>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="menu-item">
+                <button class="menu-btn">Products</button>
+                <!-- Fix the broken list structure: add a submenu or leave it as is -->
+            </li>
+            <li class="menu-item">
+                <button class="menu-btn">Company Info</button>
+                <ul class="submenu">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <button class="menu-btn" onclick="toggleEmailSubmenu()">Contact Us</button>
+                <ul class="submenu email-submenu" id="emailSubmenu">
+                    <li><a href="mailto:200621192@student.georgianc.on.ca">200621192@student.georgianc.on.ca</a></li>
+                    <li><a href="mailto:200602741@student.georgianc.on.ca">200602741@student.georgianc.on.ca</a></li>
+                    <li><a href="mailto:200624869@student.georgianc.on.ca">200624869@student.georgianc.on.ca</a></li>
+                </ul>
+            </li>
+            
+              
+            <script src="scripts.js"></script>
+
+            
+        </ul>
+    </nav>
+
+    <footer>
+        <p>&copy; 2024 Atari Games. All rights reserved.</p>
+    </footer>
+
+    
+
+
+</body>
+</html>
