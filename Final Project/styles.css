@@ -1,0 +1,331 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+    color: #fff;
+    
+} 
+
+/* Remove blue underline from links */
+a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherit the text color from the parent element */
+}
+
+/* If you want to apply styles specifically to the game cards */
+.game-card a {
+    text-decoration: none; /* Removes the underline from the links inside the game cards */
+    color: inherit; /* Makes sure the text color remains consistent */
+}
+
+/* Header */
+header {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #f1c40f;
+}
+
+header .slogan {
+    font-size: 1.5rem;
+    color: #bdc3c7;
+}
+
+header .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+/* Promo Video */
+.promo-video video {
+    width: 100%;
+    height: auto;
+}
+
+/* Introduction Section */
+.intro {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    color: #f1c40f;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+/* Featured Games */
+.featured-games {
+    padding: 40px 20px;
+    background-color: #2c3e50;
+}
+
+.featured-games h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f1c40f;
+}
+
+.games {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.game {
+    background-color: #34495e;
+    width: 30%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 2px solid #f1c40f; /* Add border with a color */
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: center;
+}
+
+
+.game h3 {
+    font-size: 1.5rem;
+    color: #f1c40f;
+   
+}
+
+.game p {
+    font-size: 1rem;
+    color: #ecf0f1;
+}
+
+.game img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.game:hover {
+    background-color: #f39c12;
+    transform: scale(1.05);
+}
+
+/* Navigation Bar */
+.nav-container {
+    display: flex;
+    align-items: center;
+    background-color: #111;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    gap: 20px; /* Add space between elements */
+}
+
+/* Adjust logo position */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px; /* Space between logo and navigation */
+}
+
+/* Navigation Links */
+nav {
+    flex-grow: 1; /* Makes the nav section take remaining space */
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px; /* Spacing between navigation items */
+}
+
+nav ul li {
+    position: relative;
+}
+
+/* Consistent styling for both <a> and <button> */
+nav a, nav .menu-btn {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+}
+
+nav a:hover, nav .menu-btn:hover {
+    background-color: #f39c12;
+}
+
+
+/* Submenu Styles */
+.submenu {
+    display: none; /* Initially hide submenus */
+    position: absolute;
+    background-color: #2c3e50;
+    padding: 10px;
+    border-radius: 4px;
+    list-style: none;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+.submenu a {
+    color: #f1c40f; /* Light color for submenu items */
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.submenu a:hover {
+    background-color: #f39c12; /* Highlight color on hover */
+    color: #fff; /* Ensure the text is readable when hovered */
+}
+
+/* Make the submenu visible on hover */
+.menu-item:hover .submenu {
+    display: block; /* Show submenu when parent item is hovered */
+}
+
+/* Menu Item Styles */
+.menu-item {
+    position: relative;
+}
+
+.menu-btn {
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+}
+
+.menu-btn:hover {
+    color: #f39c12; /* Ensure visible hover color */
+}
+
+/* Hover effect for "Contact Us" and "About Us" menu items */
+nav a:hover, nav .menu-btn:hover {
+    background-color: #f39c12;
+    color: #fff; /* Ensure text color contrasts with the background */
+}
+
+
+/* Footer */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    color: #bdc3c7;
+}
+
+/* Careers Section */
+.careers-section {
+    margin: 40px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+.job-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.job-card {
+    background-color: #2c3e50;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.job-card h3 {
+    font-size: 1.2rem;
+    color: #f1c40f;
+    margin: 10px 0;
+}
+
+.job-card p {
+    font-size: 0.9rem;
+    color: #ecf0f1;
+    margin-bottom: 15px;
+}
+
+.job-card button {
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.job-card button:hover {
+    background-color: #e67e22;
+}
+.view-more-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #f39c12;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.view-more-btn:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+.apply-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.apply-btn:hover {
+    background-color: #f39c12;
+}
